@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chào Mừng Ngày Phụ Nữ Việt Nam 20/11</title>
+    <style>
+      * {
+        margin: 0; /* Đặt lề mặc định của tất cả các phần tử là 0 */
+        padding: 0; /* Đặt khoảng đệm mặc định của tất cả các phần tử là 0 */
+        box-sizing: border-box; /* Để tính toán chiều rộng và chiều cao bao gồm cả padding và border */
+      }
+
+      body {
+        background-color: rgb(
+          253,
+          209,
+          209
+        ); /* Đặt màu nền cho toàn bộ trang */
+      }
+
+      .wrapper {
+        height: 500px; /* Chiều cao của khung chứa chính */
+        width: 700px; /* Chiều rộng của khung chứa chính */
+        margin: 50px auto; /* Đặt khoảng cách bên ngoài 50px ở trên và dưới, tự động căn giữa bên trái và phải */
+        border-radius: 7px; /* Bo góc của khung chứa chính */
+        box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15); /* Thêm bóng cho khung chứa chính */
+      }
+
+      .product-video {
+        float: left;
+        height: 420px;
+        width: 327px;
+      }
+
+      .product-info {
+        float: left; /* Đặt phần tử này nằm bên trái, ngay cạnh video */
+        height: 500px; /* Chiều cao của thông tin sản phẩm */
+        width: 300px; /* Chiều rộng của thông tin sản phẩm */
+        border-radius: 7px 0 0 7px; /* Bo góc bên trái của khung thông tin */
+        background-color: #fff; /* Đặt màu nền trắng cho thông tin sản phẩm */
+      }
+
+      .product-text {
+        height: 300px; /* Chiều cao của khung chứa văn bản sản phẩm */
+        width: 327px; /* Chiều rộng của khung chứa văn bản sản phẩm */
+      }
+
+      .product-text h1 {
+        margin: 0 0 0 38px; /* Đặt lề cho tiêu đề h1 */
+        padding-top: 52px; /* Thêm khoảng đệm ở trên cùng của tiêu đề */
+        font-size: 34px; /* Kích thước font chữ của tiêu đề */
+        color: rgb(253, 209, 209); /* Màu chữ cho tiêu đề */
+      }
+
+      .product-text h2 {
+        margin: 10px 0 10px 38px; /* Đặt lề cho tiêu đề phụ h2 */
+        font-size: 13px; /* Kích thước font chữ của tiêu đề phụ */
+        font-weight: 400; /* Độ đậm của chữ tiêu đề phụ */
+        text-transform: uppercase; /* Chuyển đổi chữ thành chữ in hoa */
+        color: #d2d2d2; /* Màu chữ cho tiêu đề phụ */
+        letter-spacing: 0.2em; /* Khoảng cách giữa các chữ cái */
+      }
+
+      .product-text p {
+        margin: 0 0 0 38px; /* Đặt lề cho đoạn văn */
+        color: black; /* Màu chữ cho đoạn văn */
+        line-height: 1.7em; /* Chiều cao dòng của đoạn văn */
+        font-size: 15px; /* Kích thước font chữ của đoạn văn */
+        font-weight: lighter; /* Độ đậm của chữ trong đoạn văn */
+        overflow: hidden; /* Ẩn các phần tử tràn ra ngoài khung */
+      }
+
+      .product-btn {
+        height: 103px; /* Chiều cao của khung chứa nút */
+        width: 327px; /* Chiều rộng của khung chứa nút */
+        margin-top: 30px; /* Đặt khoảng cách bên trên khung nút */
+        position: relative; /* Đặt vị trí của khung nút tương đối */
+      }
+
+      .product-btn button {
+        display: inline-block; /* Hiển thị nút ở dạng khối ngang */
+        height: 50px; /* Chiều cao của nút */
+        width: 176px; /* Chiều rộng của nút */
+        margin: 0 40px 0 16px; /* Đặt khoảng cách bên ngoài cho nút */
+        box-sizing: border-box; /* Để tính toán chiều rộng và chiều cao bao gồm cả padding và border */
+        border: transparent; /* Không có viền cho nút */
+        border-radius: 60px; /* Bo góc của nút */
+        font-size: 14px; /* Kích thước font chữ của nút */
+        font-weight: 500; /* Độ đậm của chữ trên nút */
+        text-transform: uppercase; /* Chuyển đổi chữ trên nút thành chữ in hoa */
+        letter-spacing: 0.2em; /* Khoảng cách giữa các chữ cái trên nút */
+        color: #fff; /* Màu chữ cho nút */
+        background-color: #9cebd5; /* Màu nền cho nút */
+        cursor: pointer; /* Thay đổi con trỏ khi di chuột qua nút */
+        outline: none; /* Không hiển thị viền khi nút được chọn */
+      }
+
+      .product-btn button:hover {
+        background-color: #79b091; /* Thay đổi màu nền khi di chuột qua nút */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <video class="product-video" controls>
+        <source src="video.mp4" type="video/mp4" />
+      </video>
+
+      <div class="product-info">
+        <div class="product-text">
+          <h1>Chào Mừng Ngày Phụ Nữ Việt Nam</h1>
+          <h2>Chúc mừng cô SƯƠNG</h2>
+          <p>
+            Nhân ngày phụ nữ Việt Nam ta
+            <br />
+            Gửi mấy vần thơ gọi chút quà
+            <br />
+            Chúc cô môi hồng xinh đẹp nhé
+            <br />
+            Mừng cô má đỏ dễ thương nha <br />
+            Tình yêu thắm thiết hoài đơm nụ <br />
+            Hạnh phúc đong đầy vẫn nở hoa <br />
+            Sự nghiệp công danh đều đủ cả <br />
+            Vui tươi cứ trẻ mãi không già ❤️ <br />
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
